@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  </head>
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main class="principal">
+      <h1 class="titulo">Fórmulas de física</h1>
+      <div class="home-container">
+      <section class="dinamica">
+        <h2 class="titulo">Dinâmica</h1>
+            <span class="textbox">
+                <p class="formulas">F = ma</p>
+                <p class="formulas">Q = mv</p>
+                <p class="formulas">P = mg</p>
+            </span>
+      </section>
+      <section class="termologia">
+        <h2 class="titulo">Termologia</h2>
+        <span class="textbox">
+            <p class="formulas">Q = m * c * t</p>
+            <p class="formulas">Tc = Tk - 273</p>
+            <p class="formulas">PV/T = nR</p>
+        </span>
+      </section>
+      <section class="eletrica">
+        <h2 class="titulo">Elétrica</h2>
+        <span class="textbox">
+            <p class="formulas">P = U * I</p>
+            <p class="formulas">P = R * I²</p>
+            <p class="formulas">Q = n * e</p>
+        </span>
+      </section>
+    </div>
+    </main>
+    <%- include("../partials/footer.ejs") %>
+  </body>
+</html>
