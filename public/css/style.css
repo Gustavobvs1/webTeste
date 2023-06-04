@@ -175,7 +175,8 @@ body {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(to right, #654ea3, #eaafc8);
-  height: 200px;
+  height: 250px;
+  width: 250px;
 }
 
 .cadastro-form {
