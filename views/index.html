@@ -5,10 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../public/css/style.css" type="text/css" />
   </head>
   <body>
-    <%- include("../partials/header.ejs") %>
+    <header class="cabecalho">
+      <img
+        class="cabecalho-imagem"
+        src="../public/assets/randomImage.jpeg"
+        alt="Logo de imagem aleatoria"
+      />
+      <nav class="cabecalho-navbar">
+        <a class="cabecalho-navbar-item" href="index.html">Home</a>
+        <a class="cabecalho-navbar-item" href="carrossel.html">Carrossel</a>
+        <a class="cabecalho-navbar-item" href="cadastro.html">Cadastro</a>
+      </nav>
+    </header>
+    
     <main class="principal">
       <h1 class="titulo">Fórmulas de física</h1>
       <div class="home-container">
@@ -38,6 +50,8 @@
       </section>
     </div>
     </main>
-    <%- include("../partials/footer.ejs") %>
+    <footer class="rodape">
+      <p class="rodape-texto">Criado por Gustavo Borges</p>
+    </footer>
   </body>
 </html>

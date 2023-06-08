@@ -4,18 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <title>Carrossel</title>
+    <link rel="stylesheet" href="../public/css/style.css" type="text/css" />
   </head>
   <body>
-    <%- include("../partials/header.ejs") %>
+    <header class="cabecalho">
+      <img
+        class="cabecalho-imagem"
+        src="../public/assets/randomImage.jpeg"
+        alt="Logo de imagem aleatoria"
+      />
+      <nav class="cabecalho-navbar">
+        <a class="cabecalho-navbar-item" href="index.html">Home</a>
+        <a class="cabecalho-navbar-item" href="carrossel.html">Carrossel</a>
+        <a class="cabecalho-navbar-item" href="cadastro.html">Cadastro</a>
+      </nav>
+    </header>
     <main>
       <ul class="slider">
         <li class="slider-list">
           <input type="radio" name="slide" id="slide1" checked />
           <label for="slide1"></label>
           <img
-            src="../assets/blackhole.jpg"
+            src="../public/assets/blackhole.jpg"
             alt="imagem de um buraco negro"
             class="slider-img"
           />
@@ -23,19 +33,25 @@
         <li class="slider-list">
           <input type="radio" name="slide" id="slide2" />
           <label for="slide2"></label>
-          <img src="../assets/Lua.jpg" alt="imagem da lua" class="slider-img" />
+          <img
+            src="../public/assets/Lua.jpg"
+            alt="imagem da lua"
+            class="slider-img"
+          />
         </li>
         <li class="slider-list">
           <input type="radio" name="slide" id="slide3" />
           <label for="slide3"></label>
           <img
-            src="../assets/Supernova.jpg"
+            src="../public/assets/Supernova.jpg"
             alt="Imagem de uma Supernova"
             class="slider-img"
           />
         </li>
       </ul>
     </main>
-    <%- include("../partials/footer.ejs") %>
+    <footer class="rodape">
+      <p class="rodape-texto">Criado por Gustavo Borges</p>
+    </footer>
   </body>
 </html>
