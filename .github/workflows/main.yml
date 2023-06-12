@@ -18,4 +18,4 @@ jobs:
           server: ${{ secrets.FTP_SERV }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /home/guborges/domains/guborges.com.br/
+          server-dir: /home/guborges/domains/guborges.com.br/public_html/gustavo/
