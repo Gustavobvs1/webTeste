@@ -15,7 +15,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP.SERV }}
-          username: ${{ secrets.FTP.USERNAME }}
-          password: ${{ secrets.FTP.PASSWORD }}
-          server-dir: /home/guborges/domains/guborges.com.br/public_html/
+          server: ${{ secrets.FTP_SERV }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_SERV}}
